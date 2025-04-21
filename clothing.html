@@ -16,6 +16,7 @@
           <a href="clothing.html" class="hover:underline">Одежда</a>
           <a href="electronics.html" class="hover:underline">Электроника</a>
           <a href="cosmetics.html" class="hover:underline">Косметика</a>
+          <a href="cart.html" id="cart-button" class="hover:underline relative">Корзина <span id="cart-counter" class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">0</span></a>
         </nav>
       </div>
     </header>
@@ -26,24 +27,24 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <!-- Product Card -->
         <div class="bg-white rounded-xl shadow p-4">
-          <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <img src="https://images.satu.kz/226932467_w640_h640_futbolki-trikotazhnye.jpg" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium mb-2">Футболка мужская</h3>
           <p class="text-[#4AA3F3] font-bold mb-2">4 990₸</p>
-          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
 
         <div class="bg-white rounded-xl shadow p-4">
-          <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <img src="https://a.lmcdn.ru/img600x866/M/P/MP002XW0FTAO_23355236_2_v1.jpg" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium mb-2">Джинсы женские</h3>
           <p class="text-[#4AA3F3] font-bold mb-2">7 500₸</p>
-          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
 
         <div class="bg-white rounded-xl shadow p-4">
           <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium mb-2">Куртка зимняя</h3>
           <p class="text-[#4AA3F3] font-bold mb-2">12 000₸</p>
-          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
       </div>
     </main>
@@ -61,5 +62,6 @@
 
   </body>
   <script defer src="https://static.getbutton.io/widget/bundle.js?id=GUrUJ" ></script>
+  <script src="js/cart.js"></script>
 
 </html>
