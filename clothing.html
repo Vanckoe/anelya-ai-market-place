@@ -16,6 +16,8 @@
           <a href="clothing.html" class="hover:underline">Одежда</a>
           <a href="electronics.html" class="hover:underline">Электроника</a>
           <a href="cosmetics.html" class="hover:underline">Косметика</a>
+          <a href="jewelry.html" class="hover:underline">Бижутерия</a>
+          <a href="books.html" class="hover:underline">Книги и канцелярия</a>
           <a href="cart.html" id="cart-button" class="hover:underline relative">Корзина <span id="cart-counter" class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">0</span></a>
         </nav>
       </div>
@@ -24,44 +26,163 @@
     <!-- Products Section -->
     <main class="container mx-auto px-4 min-h-screen py-8">
       <h2 class="text-xl font-semibold mb-6">Одежда</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <!-- Product Card -->
-        <div class="bg-white rounded-xl shadow p-4">
-          <img src="https://images.satu.kz/226932467_w640_h640_futbolki-trikotazhnye.jpg" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+        <div class="bg-white rounded-xl shadow p-3 cursor-pointer product-card" data-name="Футболка мужская" data-price="4 990₸" data-description="Удобная и стильная футболка мужская." data-image="https://img.joomcdn.net/45f52457fa2e558862139dc4ec1ab8ac6c095627_original.jpeg">
+          <img src="https://img.joomcdn.net/45f52457fa2e558862139dc4ec1ab8ac6c095627_original.jpeg" alt="Футболка мужская" class="w-full h-60 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium mb-2">Футболка мужская</h3>
           <p class="text-[#4AA3F3] font-bold mb-2">4 990₸</p>
           <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
 
-        <div class="bg-white rounded-xl shadow p-4">
-          <img src="https://a.lmcdn.ru/img600x866/M/P/MP002XW0FTAO_23355236_2_v1.jpg" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer product-card" data-name="Джинсы женские" data-price="7 500₸" data-description="Стильные джинсы женские." data-image="https://a.lmcdn.ru/img600x866/M/P/MP002XW0FTAO_23355236_2_v1.jpg">
+          <img src="https://a.lmcdn.ru/img600x866/M/P/MP002XW0FTAO_23355236_2_v1.jpg" alt="Джинсы женские" class="w-full h-60 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium mb-2">Джинсы женские</h3>
           <p class="text-[#4AA3F3] font-bold mb-2">7 500₸</p>
           <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
 
-        <div class="bg-white rounded-xl shadow p-4">
-          <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
-          <h3 class="text-lg font-medium mb-2">Куртка зимняя</h3>
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer product-card" data-name="Корсет" data-price="12 500₸" data-description="Элегантный женский корсет." data-image="https://i.pinimg.com/736x/0a/43/ff/0a43fff6ae2219cf5a1902d918619a21.jpg">
+          <img src="https://i.pinimg.com/736x/0a/43/ff/0a43fff6ae2219cf5a1902d918619a21.jpg" alt="Корсет" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Корсет</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">12 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer product-card" data-name="Мужские классические штаны" data-price="9 500₸" data-description="Элегантные мужские штаны." data-image="https://pizhon.by/assets/images/products/8843/prod/e3caed2f9da2aa9a2a483ed4750e1ecf.webp">
+          <img src=" https://pizhon.by/assets/images/products/8843/prod/e3caed2f9da2aa9a2a483ed4750e1ecf.webp" alt="Мужские классические штаны" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Мужские классические штаны</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">9 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer product-card" data-name="Спортивный костюм мужской" data-price="15 500₸" data-description="Теплый спортивный костюм." data-image="https://static2.orce.ru/cont/media_volm/cat/big/15012K_3.jpg">
+          <img src="https://static2.orce.ru/cont/media_volm/cat/big/15012K_3.jpg" alt="Спортивный костюм мужской" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Спортивный костюм мужской</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">15 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer product-card" data-name="Облегающее платье" data-price="11 000₸" data-description="Элегантное облегающее платье." data-image="https://images.prom.ua/6179837170_w600_h600_6179837170.jpg">
+          <img src="https://images.prom.ua/6179837170_w600_h600_6179837170.jpg " alt="Облегающее платье" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Облегающее платье</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">11 000₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer product-card" data-name="Пижама для детей" data-price="5 500₸" data-description="Милый комплект пижамы для детей." data-image=" https://image-thumbs.shafastatic.net/1430800237_310_430">
+          <img src="https://image-thumbs.shafastatic.net/1430800237_310_430" alt="Пижама для детей" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Пижама для детей</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">5 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer product-card" data-name="Халат уни" data-price="18 500₸" data-description="Удобный халат универсальный." data-image="https://main-cdn.sbermegamarket.ru/big2/hlr-system/258/450/419/412/51/600011443836b3.jpeg">
+          <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/258/450/419/412/51/600011443836b3.jpeg" alt="Халат уни" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Халат уни</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">18 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer product-card" data-name="Летнее платье" data-price="23 500₸" data-description="Лёгкое летнее платье — нежность и свобода в каждом движении. Идеально для тёплых дней и ярких моментов." data-image="https://sobrightdress.com/wp-content/uploads/2025/04/plate-s-dekolte-i-pyshnoj-yubkoj-v-rozovom-czvete.jpg.webp">
+          <img src="https://sobrightdress.com/wp-content/uploads/2025/04/plate-s-dekolte-i-pyshnoj-yubkoj-v-rozovom-czvete.jpg.webp" alt="Летнее платье" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Летнее платье</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">23 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer product-card" data-name="Пальто" data-price="98 000₸" data-description="Элегантное пальто — стильная защита от холода, сочетающая тепло и утончённость в каждой детали." data-image="https://avatars.mds.yandex.net/i?id=eed1072c0c21a2416f0eb1be864fdfea_l-5115981-images-thumbs&n=13">
+          <img src="https://avatars.mds.yandex.net/i?id=eed1072c0c21a2416f0eb1be864fdfea_l-5115981-images-thumbs&n=13" alt="Пальто" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Пальто</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">98 000₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer product-card" data-name="Мужской костюм" data-price="89 000₸" data-description="Мужской костюм — символ уверенности и безупречного стиля для любого важного события." data-image="https://i.pinimg.com/736x/a1/73/bc/a173bcbd04e01350a0bb92e9659b9593.jpg">
+          <img src="https://i.pinimg.com/736x/a1/73/bc/a173bcbd04e01350a0bb92e9659b9593.jpg" alt="Мужской костюм" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Мужской костюм</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">89 000₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer product-card" data-name="Куртка зимняя для детей" data-price="12 000₸" data-description="Теплая зимняя куртка." data-image="https://ae04.alicdn.com/kf/S37b57de184cf41c6b58df884dda30f4b4.jpg">
+          <img src="https://ae04.alicdn.com/kf/S37b57de184cf41c6b58df884dda30f4b4.jpg" alt="Куртка зимняя для детей" class="w-50 h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Куртка зимняя для детей</h3>
           <p class="text-[#4AA3F3] font-bold mb-2">12 000₸</p>
           <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
       </div>
     </main>
 
+    <!-- Modal -->
+    <div id="product-modal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden">
+      <div class="bg-white rounded-xl p-6 w-96 relative">
+        <button id="close-modal" class="absolute top-2 right-2 text-gray-500 text-2xl">&times;</button>
+        <img id="modal-image" src="" alt="Product" class="w-full h-60 object-cover rounded-md mb-4" />
+        <h3 id="modal-name" class="text-lg font-medium mb-2"></h3>
+        <p id="modal-price" class="text-[#4AA3F3] font-bold mb-2"></p>
+        <p id="modal-description" class="text-gray-700"></p>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6 mt-12">
-      <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm">
-        <p>© 2025 WildShop. Все права защищены.</p>
-        <div class="space-x-4 mt-2 sm:mt-0">
-          <a href="#" class="hover:underline">Контакты</a>
-          <a href="#" class="hover:underline">Политика конфиденциальности</a>
+      <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
+        <p class="text-center sm:text-left">© 2025 WildShop. Все права защищены.</p>
+        <div class="space-x-4 mt-4 sm:mt-0">
+          <a href="#" class="text-gray-400 hover:text-white">Политика конфиденциальности</a>
+          <a href="#" class="text-gray-400 hover:text-white">Условия использования</a>
         </div>
       </div>
     </footer>
 
-  </body>
-  <script defer src="https://static.getbutton.io/widget/bundle.js?id=GUrUJ" ></script>
-  <script src="js/cart.js"></script>
+    <script>
+      // Open modal with product details
+      const productCards = document.querySelectorAll('.product-card');
+      const modal = document.getElementById('product-modal');
+      const closeModalButton = document.getElementById('close-modal');
+      const modalName = document.getElementById('modal-name');
+      const modalPrice = document.getElementById('modal-price');
+      const modalDescription = document.getElementById('modal-description');
+      const modalImage = document.getElementById('modal-image');
 
+      productCards.forEach(card => {
+        card.addEventListener('click', () => {
+          modalName.textContent = card.dataset.name;
+          modalPrice.textContent = card.dataset.price;
+          modalDescription.textContent = card.dataset.description;
+          modalImage.src = card.dataset.image;
+
+          modal.classList.remove('hidden');
+        });
+      });
+
+      closeModalButton.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+
+      // Add item to cart (for demonstration purposes)
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+      const cartCounter = document.getElementById('cart-counter');
+      let cartCount = 0;
+
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+          event.stopPropagation();
+          cartCount++;
+          cartCounter.textContent = cartCount;
+        });
+      });
+    </script>
+    
+    <script defer src="https://static.getbutton.io/widget/bundle.js?id=GUrUJ" ></script>
+    <script src="js/cart.js"></script>
+    <script src="js/modal.js"></script>
+
+    
+
+      
+
+  </body>
 </html>

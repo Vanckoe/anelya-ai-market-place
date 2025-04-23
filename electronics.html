@@ -16,6 +16,8 @@
           <a href="clothing.html" class="hover:underline">Одежда</a>
           <a href="electronics.html" class="hover:underline">Электроника</a>
           <a href="cosmetics.html" class="hover:underline">Косметика</a>
+          <a href="jewelry.html" class="hover:underline">Бижутерия</a>
+          <a href="books.html" class="hover:underline">Книги и канцелярия</a>
           <a href="cart.html" id="cart-button" class="hover:underline relative">Корзина <span id="cart-counter" class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">0</span></a>
         </nav>
       </div>
@@ -24,30 +26,120 @@
     <!-- Products Section -->
     <main class="container mx-auto px-4 min-h-screen py-8">
       <h2 class="text-xl font-semibold mb-6">Электроника</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <!-- Product Card -->
-        <div class="bg-white rounded-xl shadow p-4">
-          <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Product Card 1 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('headphones', 'https://cdn0.ipoint.kz/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230913081126463007/250408160013777696.png@webp', 'Беспроводные наушники', '15 900₸', 'Высококачественные беспроводные наушники с отличным звучанием.')">
+          <img src="https://cdn0.ipoint.kz/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230913081126463007/250408160013777696.png@webp" alt="Беспроводные наушники" class="w-full h-48 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium mb-2">Беспроводные наушники</h3>
-          <p class="text-[#4AA3F3] font-bold mb-2">15 900₸</p>
+          <p class="text-[#4AA3F3] font-bold mb-2">189 900₸</p>
           <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
 
-        <div class="bg-white rounded-xl shadow p-4">
-          <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+        <!-- Product Card 2 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('fridge', 'https://object.pscloud.io/cms/cms/Photo/img_0_25_1183_0_6.png', 'Холодильник', '236 900₸', 'Современный холодильник с большой вместимостью и низким энергопотреблением.')">
+          <img src="https://object.pscloud.io/cms/cms/Photo/img_0_25_1183_0_6.png" alt="Холодильник" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Холодильник</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">236 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('tv', 'https://telemarket24.ru/upload/resizer2/1/bea/bea4835f3b0418884352a2a9bbb41199.JPG', 'Телевизор', '189 900₸', 'Телевизор с высокой четкостью изображения и современными технологиями.')">
+          <img src=" https://telemarket24.ru/upload/resizer2/1/bea/bea4835f3b0418884352a2a9bbb41199.JPG" alt="Телевизор" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Телевизор</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">189 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('smartphone', 'https://ek-tel.ru/wa-data/public/shop/products/78/13/1378/images/9561/9561.393.JPG', 'Телефон', '890 900₸', 'Мощный смартфон с невероятно быстрой камерой и процессором.')">
+          <img src="https://ek-tel.ru/wa-data/public/shop/products/78/13/1378/images/9561/9561.393.JPG" alt="Телефон" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Телефон</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">890 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+         <!-- Product Card 4 -->
+         <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('Conditioner', 'https://tecl.ru/wa-data/public/shop/products/22/11/21122/images/36470/36470.970.jpg', 'Кондиционер', '190 900₸', 'Охладите лето и согрейте зиму с нашим кондиционером! Эффективное и тихое решение для вашего комфорта в любое время года.')">
+          <img src="https://tecl.ru/wa-data/public/shop/products/22/11/21122/images/36470/36470.970.jpg" alt="Кондиционер" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Кондиционер</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">190 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('dyson', 'https://lookstore.kz/image/cache/catalog/dyson/dyson-airwrap-styler-0-485x485.jpg', 'Фен Dyson', '289 000₸', 'Идеальный фен для укладки с технологией защиты волос.')">
+          <img src="https://lookstore.kz/image/cache/catalog/dyson/dyson-airwrap-styler-0-485x485.jpg" alt="Фен Dyson" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Фен Dyson</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">289 000₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        
+        <!-- Product Card 5 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('dyson', 'https://avatars.mds.yandex.net/get-altay/1363278/2a00000162d461bd05e1faff0b669f3c3e16/XXXL', 'Термомикс', '990 000₸', 'Термомикс — многофункциональный кухонный помощник: режет, варит, взбивает и готовит на пару. Всё в одном устройстве — экономит время, место и силы.')">
+          <img src="https://avatars.mds.yandex.net/get-altay/1363278/2a00000162d461bd05e1faff0b669f3c3e16/XXXL" alt="Термомикс" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Термомикс</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">990 000₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('washingmachine', 'https://www.lg.com/content/dam/channel/wcms/kz/wm-dryer-lg-styler/wm-pdp/f2v9fw9p-ablpcom/f2v9fw9p-gallery/1600/12_Vivace_V900_9kg_BlackSteel_F2V9FWP2E_F2V9FW9P_AK_slim_Right.png', 'Стиральная машинаn', '269 000₸', 'Надежная стиральная машина с современными технологиями! Эффективная стирка, низкий уровень шума и экономия энергии — идеальный выбор для вашего дома..')">
+          <img src="https://www.lg.com/content/dam/channel/wcms/kz/wm-dryer-lg-styler/wm-pdp/f2v9fw9p-ablpcom/f2v9fw9p-gallery/1600/12_Vivace_V900_9kg_BlackSteel_F2V9FWP2E_F2V9FW9P_AK_slim_Right.png" alt="Стиральная машина" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Стиральная машина</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">269 000₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('printer', 'https://pspdf.kz/image/catalog/products/printer/pixmapro-200/1.jpg', 'Принтер', '159 000₸', 'Принтер с высокой скоростью печати и возможностью беспроводного подключения.')">
+          <img src=" https://pspdf.kz/image/catalog/products/printer/pixmapro-200/1.jpg" alt="Принтер" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Принтер</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">159 000₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <!-- Product Card 7 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('camera', ' https://i1.adis.ws/i/canon/eos-r6-rf24-105mm-f4_7.1_is_stm_front-on_square_6412568cc0e7484b96bd55e43069a56c?$prod-grid-1by1-jpg$', 'Камера', '489 000₸', 'Камера с отличной оптикой и высокой чувствительностью.')">
+          <img src="https://i1.adis.ws/i/canon/eos-r6-rf24-105mm-f4_7.1_is_stm_front-on_square_6412568cc0e7484b96bd55e43069a56c?$prod-grid-1by1-jpg$" alt="Камера" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Камера</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">489 000₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <!-- Product Card 8 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('smartphone2', 'https://2emarket.ru/wa-data/public/shop/products/43/32/13243/images/14991/14991.970.jpg', 'Смартфон', '89 900₸', 'Компактный смартфон с хорошим экраном и долгим временем работы.')">
+          <img src="https://2emarket.ru/wa-data/public/shop/products/43/32/13243/images/14991/14991.970.jpg" alt="Смартфон" class="w-full h-48 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium mb-2">Смартфон</h3>
           <p class="text-[#4AA3F3] font-bold mb-2">89 900₸</p>
           <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
 
-        <div class="bg-white rounded-xl shadow p-4">
-          <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+        <!-- Product Card 9 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('laptop', 'https://505.kz/upload/iblock/641/xbtfsp5hmalkdj9xkvbei56jldk1bfbj.jpg', 'Ноутбук', '199 900₸', 'Мощный ноутбук с отличной производительностью и удобным дизайном.')">
+          <img src="https://505.kz/upload/iblock/641/xbtfsp5hmalkdj9xkvbei56jldk1bfbj.jpg" alt="Ноутбук" class="w-full h-48 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium mb-2">Ноутбук</h3>
           <p class="text-[#4AA3F3] font-bold mb-2">199 900₸</p>
           <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
       </div>
     </main>
+
+    <!-- Modal -->
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+      <div class="bg-white rounded-lg w-11/12 sm:w-1/3 p-6 relative">
+        <!-- Close Button -->
+        <button onclick="closeModal()" class="absolute top-2 right-2 text-xl text-gray-500 hover:text-gray-800">×</button>
+
+        <div id="modalContent" class="text-center">
+          <img id="modalImage" src="" alt="" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 id="modalTitle" class="text-lg font-medium mb-2"></h3>
+          <p id="modalPrice" class="text-[#4AA3F3] font-bold mb-2"></p>
+          <p id="modalDescription" class="text-gray-700"></p>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6 mt-12">
@@ -60,8 +152,33 @@
       </div>
     </footer>
 
-  </body>
-  <script defer src="https://static.getbutton.io/widget/bundle.js?id=GUrUJ" ></script>
-  <script src="js/cart.js"></script>
+    <!-- Scripts -->
+    <script defer src="https://static.getbutton.io/widget/bundle.js?id=GUrUJ"></script>
+    <script src="js/cart.js"></script>
 
+    <script>
+      function openModal(product, imageUrl, title, price, description) {
+        const modal = document.getElementById("productModal");
+        const modalImage = document.getElementById("modalImage");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalPrice = document.getElementById("modalPrice");
+        const modalDescription = document.getElementById("modalDescription");
+
+        modalImage.src = imageUrl;
+        modalTitle.innerText = title;
+        modalPrice.innerText = price;
+        modalDescription.innerText = description;
+
+        modal.classList.remove("hidden");
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("productModal");
+        modal.classList.add("hidden");
+      }
+    </script>
+
+    
+
+  </body>
 </html>

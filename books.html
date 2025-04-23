@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WildShop — Книги и канцелярия</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-[#4AA3F3] text-white py-4 shadow-md">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <a href='index.html' class="text-2xl font-bold">WildShop</a>
+      <nav class="space-x-4">
+        <a href="clothing.html" class="hover:underline">Одежда</a>
+        <a href="electronics.html" class="hover:underline">Электроника</a>
+        <a href="cosmetics.html" class="hover:underline">Косметика</a>
+        <a href="jewelry.html" class="hover:underline">Бижутерия</a>
+        <a href="books.html" class="hover:underline">Книги и канцелярия</a>
+        <a href="cart.html" id="cart-button" class="hover:underline relative">Корзина <span id="cart-counter" class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Products Section -->
+  <main class="container mx-auto px-4 min-h-screen py-8">
+    <h2 class="text-xl font-semibold mb-6">Книги и канцелярия</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+      <div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+           data-name="Мастер и Маргарита" 
+           data-price="3 800₸" 
+           data-description="Роман Михаила Булгакова." 
+           data-image="https://simg.marwin.kz/media/catalog/product/cache/41deb699a7fea062a8915debbbb0442c/1/0/bulgakov_m_a_master_i_margarita_mirovaya_klassika.jpg">
+        <img src="https://simg.marwin.kz/media/catalog/product/cache/41deb699a7fea062a8915debbbb0442c/1/0/bulgakov_m_a_master_i_margarita_mirovaya_klassika.jpg" alt="Мастер и Маргарита" class="w-55 h-60 object-cover rounded-md mb-4">
+        <h3 class="text-lg font-medium mb-2">Мастер и Маргарита</h3>
+        <p class="text-[#4AA3F3] font-bold mb-2">3 800₸</p>
+        <button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+      </div>
+
+        <!-- Книги -->
+        <div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+        data-name="1984" 
+        data-price="3 200₸" 
+        data-description="Антиутопия Джорджа Оруэлла." 
+        data-image="https://s.f.kz/prod/2409/2408258_1000.jpg">
+    <img src="https://s.f.kz/prod/2409/2408258_1000.jpg" alt="1984" class="w-55 h-60 object-cover rounded-md mb-4">
+    <h3 class="text-base font-medium mb-2">1984</h3>
+    <p class="text-[#4AA3F3] font-bold mb-2">3 200₸</p>
+    <button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+    </div>
+      <div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+     data-name="Жүз жылдық жалғыздық" 
+     data-price="4 000₸" 
+     data-description="Габриэль Гарсиа Маркес – атақты роман, қазақ тіліне аударылған." 
+     data-image="https://sun9-36.userapi.com/impf/Sb2R5swZVlGGdbCTdK6uWkeeRV1MeCJVuGo2Iw/A1Q7H-tsHcQ.jpg?size=955x1318&quality=96&sign=a930e49894ce200640bc2c3c88dd5016&c_uniq_tag=IUxeOJkXEMN7eSGOTPIRbTft1VXKwq6gi1uHC6I86NA&type=album">
+  <img src="https://sun9-36.userapi.com/impf/Sb2R5swZVlGGdbCTdK6uWkeeRV1MeCJVuGo2Iw/A1Q7H-tsHcQ.jpg?size=955x1318&quality=96&sign=a930e49894ce200640bc2c3c88dd5016&c_uniq_tag=IUxeOJkXEMN7eSGOTPIRbTft1VXKwq6gi1uHC6I86NA&type=album" alt="Жүз жылдық жалғыздық" class="w-55 h-60 object-cover rounded-md mb-4">
+  <h3 class="text-lg font-medium mb-2">Жүз жылдық жалғыздық</h3>
+  <p class="text-[#4AA3F3] font-bold mb-2">4 000₸</p>
+  <button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+</div>
+
+<div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+     data-name="Абай жолы" 
+     data-price="3 500₸" 
+     data-description="Мұхтар Әуезовтың эпикалық романы." 
+     data-image="https://simg.marwin.kz/media/catalog/product/cache/8d1771fdd19ec2393e47701ba45e606d/a/u/auezov_m_abay_zholy_4_kitap_zh_1463295_20.png">
+  <img src="https://simg.marwin.kz/media/catalog/product/cache/8d1771fdd19ec2393e47701ba45e606d/a/u/auezov_m_abay_zholy_4_kitap_zh_1463295_20.png" alt="Абай жолы" class="w-55 h-60 object-cover rounded-md mb-4">
+  <h3 class="text-lg font-medium mb-2">Абай жолы</h3>
+  <p class="text-[#4AA3F3] font-bold mb-2">3 500₸</p>
+  <button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+</div>
+
+<div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+     data-name="Преступление и наказание" 
+     data-price="3 900₸" 
+     data-description="Классика русской литературы от Фёдора Достоевского." 
+     data-image="https://domknigi.eu/upload/iblock/1cb/1cbdf82fef8b94819fdb0a3f56564f26.jpg">
+  <img src="https://domknigi.eu/upload/iblock/1cb/1cbdf82fef8b94819fdb0a3f56564f26.jpg" alt="Преступление и наказание" class="w-55 h-60 object-cover rounded-md mb-4">
+  <h3 class="text-lg font-medium mb-2">Преступление и наказание</h3>
+  <p class="text-[#4AA3F3] font-bold mb-2">3 900₸</p>
+  <button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+</div>
+
+<div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+     data-name="Қыз Жібек" 
+     data-price="2 800₸" 
+     data-description="Қазақ халқының лиро-эпостық жыры." 
+     data-image="https://simg.marwin.kz/media/catalog/product/cache/8d1771fdd19ec2393e47701ba45e606d/migrated/article/4206/72_tn3.jpg">
+  <img src="https://simg.marwin.kz/media/catalog/product/cache/8d1771fdd19ec2393e47701ba45e606d/migrated/article/4206/72_tn3.jpg" alt="Қыз Жібек" class="w-55 h-60 object-cover rounded-md mb-4">
+  <h3 class="text-lg font-medium mb-2">Қыз Жібек</h3>
+  <p class="text-[#4AA3F3] font-bold mb-2">2 800₸</p>
+  <button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+</div>
+
+
+<div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+data-name="Тетрадь А5" 
+data-price="600₸" 
+data-description="96 листов, клетка, цветная обложка." 
+data-image="https://bumaga-s.ru/productImage/247716_6x550y550.jpg">
+<img src="https://bumaga-s.ru/productImage/247716_6x550y550.jpg" alt="Тетрадь А5" class="w-full h-60 object-cover rounded-md mb-4">
+<h3 class="text-lg font-medium mb-2">Тетрадь А5</h3>
+<p class="text-[#4AA3F3] font-bold mb-2">600₸</p>
+<button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+</div>
+
+<div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+data-name="Гелевая ручка" 
+data-price="300₸" 
+data-description="Гелевая синяя ручка с мягким корпусом." 
+data-image="https://images.satu.kz/226223214_w600_h600_226223214.jpg">
+<img src="https://images.satu.kz/226223214_w600_h600_226223214.jpg" alt="Гелевая ручка" class="w-55 h-60 object-cover rounded-md mb-4">
+<h3 class="text-lg font-medium mb-2">Гелевая ручка</h3>
+<p class="text-[#4AA3F3] font-bold mb-2">300₸</p>
+<button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+</div>
+
+<div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+data-name="Маркер для текста" 
+data-price="500₸" 
+data-description="Жёлтый текстовыделитель." 
+data-image="https://storage.yandexcloud.net/mostro-gm-media/960fbe92-898d-1f2b-0192-83e5dd29d1ca/2.jpg">
+<img src="https://storage.yandexcloud.net/mostro-gm-media/960fbe92-898d-1f2b-0192-83e5dd29d1ca/2.jpg" alt="Маркер для текста" class="w-55 h-60 object-cover rounded-md mb-4">
+<h3 class="text-lg font-medium mb-2">Маркер для текста</h3>
+<p class="text-[#4AA3F3] font-bold mb-2">500₸</p>
+<button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+</div>
+<div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+data-name="Цветные карандаши" 
+data-price="1200₸" 
+data-description="Набор из 12 цветных карандашей." 
+data-image="https://images.satu.kz/208193529_w640_h2048_karandashi_7.jpg?fresh=1&PIMAGE_ID=208193529">
+<img src="https://images.satu.kz/208193529_w640_h2048_karandashi_7.jpg?fresh=1&PIMAGE_ID=208193529" alt="Цветные карандаши" class="w-55 h-60 object-cover rounded-md mb-4">
+<h3 class="text-lg font-medium mb-2">Цветные карандаши</h3>
+<p class="text-[#4AA3F3] font-bold mb-2">1200₸</p>
+<button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+</div>
+
+<div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+data-name="Линейка 30 см" 
+data-price="250₸" 
+data-description="Прозрачная пластиковая линейка длиной 30 см." 
+data-image="https://img.oe.kz/bitrix-catalog/16783/1720299577-4i5kkzgcmsje2f9gjfbge9dc5aey4of4.jpg">
+<img src="https://img.oe.kz/bitrix-catalog/16783/1720299577-4i5kkzgcmsje2f9gjfbge9dc5aey4of4.jpg" alt="Линейка 30 см" class="w-55 h-60 object-cover rounded-md mb-4">
+<h3 class="text-lg font-medium mb-2">Линейка 30 см</h3>
+<p class="text-[#4AA3F3] font-bold mb-2">250₸</p>
+<button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+</div>
+
+<div class="product-card bg-white rounded-xl shadow p-4 cursor-pointer" 
+data-name="Блокнот A5" 
+data-price="850₸" 
+data-description="Блокнот в мягкой обложке, 80 листов, клетка." 
+data-image="https://allgifts.kz/assets/images/products/50874/84233519c725b3a13dba9e533e0b09df04a78cb3.jpg">
+<img src="https://allgifts.kz/assets/images/products/50874/84233519c725b3a13dba9e533e0b09df04a78cb3.jpg" alt="Блокнот A5" class="w-55 h-60 object-cover rounded-md mb-4">
+<h3 class="text-lg font-medium mb-2">Блокнот A5</h3>
+<p class="text-[#4AA3F3] font-bold mb-2">850₸</p>
+<button class="add-to-cart bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+</div>
+
+
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="product-modal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden z-50">
+    <div class="bg-white rounded-xl p-6 w-96 relative">
+      <button id="close-modal" class="absolute top-2 right-2 text-gray-500 text-2xl">&times;</button>
+      <img id="modal-image" src="" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+      <h3 id="modal-name" class="text-lg font-medium mb-2"></h3>
+      <p id="modal-price" class="text-[#4AA3F3] font-bold mb-2"></p>
+      <p id="modal-description" class="text-gray-700"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
+      <p class="text-center sm:text-left">© 2025 WildShop. Все права защищены.</p>
+      <div class="space-x-4 mt-4 sm:mt-0">
+        <a href="#" class="text-gray-400 hover:text-white">Политика конфиденциальности</a>
+        <a href="#" class="text-gray-400 hover:text-white">Условия использования</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const productCards = document.querySelectorAll('.product-card');
+    const modal = document.getElementById('product-modal');
+    const closeModalButton = document.getElementById('close-modal');
+    const modalName = document.getElementById('modal-name');
+    const modalPrice = document.getElementById('modal-price');
+    const modalDescription = document.getElementById('modal-description');
+    const modalImage = document.getElementById('modal-image');
+    const cartCounter = document.getElementById('cart-counter');
+    let cartCount = 0;
+
+    productCards.forEach(card => {
+      card.addEventListener('click', () => {
+        modalName.textContent = card.dataset.name;
+        modalPrice.textContent = card.dataset.price;
+        modalDescription.textContent = card.dataset.description;
+        modalImage.src = card.dataset.image;
+        modal.classList.remove('hidden');
+      });
+    });
+
+    closeModalButton.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', e => {
+        e.stopPropagation();
+        cartCount++;
+        cartCounter.textContent = cartCount;
+      });
+    });
+  </script>
+
+    
+    <script defer src="https://static.getbutton.io/widget/bundle.js?id=GUrUJ" ></script>
+    <script src="js/cart.js"></script>
+    <script src="js/modal.js"></script>  
+
+    
+</body>
+</html>

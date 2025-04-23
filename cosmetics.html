@@ -16,6 +16,8 @@
           <a href="clothing.html" class="hover:underline">Одежда</a>
           <a href="electronics.html" class="hover:underline">Электроника</a>
           <a href="cosmetics.html" class="hover:underline">Косметика</a>
+          <a href="jewelry.html" class="hover:underline">Бижутерия</a>
+          <a href="books.html" class="hover:underline">Книги и канцелярия</a>
           <a href="cart.html" id="cart-button" class="hover:underline relative">Корзина <span id="cart-counter" class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">0</span></a>
         </nav>
       </div>
@@ -24,30 +26,111 @@
     <!-- Products Section -->
     <main class="container mx-auto px-4 min-h-screen py-8">
       <h2 class="text-xl font-semibold mb-6">Косметика</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <!-- Product Card -->
-        <div class="bg-white rounded-xl shadow p-4">
-          <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Product Card 1 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('mascara')">
+          <img src="https://pcdn.goldapple.ru/p/p/19760336498/web/696d6167654d6f64656c8dc83c8e73792e9fullhd.webp" alt="Тушь для ресниц" class="w-full h-60 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium mb-2">Тушь для ресниц</h3>
           <p class="text-[#4AA3F3] font-bold mb-2">2 300₸</p>
           <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
 
-        <div class="bg-white rounded-xl shadow p-4">
-          <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+        <!-- Product Card 2 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('lipstick')"> <data-name="="Помада" data-price="3 500₸" data-description="Помада." data-image="https://divage.com/upload/iblock/834/83470b32d21c7d8c1b051d0016df408e.iomin.png">
+          <img src="https://divage.com/upload/iblock/834/83470b32d21c7d8c1b051d0016df408e.iomin.png" alt="Помада" class="w-full h-60 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium mb-2">Помада</h3>
           <p class="text-[#4AA3F3] font-bold mb-2">3 500₸</p>
           <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
 
-        <div class="bg-white rounded-xl shadow p-4">
-          <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('foundation')">
+          <img src="https://pcdn.goldapple.ru/p/p/69964000004/web/696d674d61696e8dc83b361f4fd08.jpg" alt="Тональная основа" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Тональная основа</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">9 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('eyeshadowPalette')">
+          <img src="https://i.makeup.kz/h/hb/hbgdiyclztcc.jpg" alt="Палетка теней" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Палетка теней</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">8 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('makeupBrush')">
+          <img src="https://ir-3.ozone.ru/s3/multimedia-7/c1000/6050072911.jpg" alt="Кисть для макияжа" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Кисть для макияжа</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">3 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('blush')">
+          <img src="https://i.makeup.kz/n/no/nosnnxh1mmis.jpg" alt="Румяна" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Румяна</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">6 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('highlighter')">
+          <img src="https://www.monamie.kz/upload/resize_cache/iblock/39b/430_292_1/39b51742175083acfba0cf354c7e6bc3.jpg" alt="Хайлайтер" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Хайлайтер</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">9 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('powder')">
+          <img src="https://i.makeup.kz/d/df/dfdvddmcibhc.jpg" alt="Пудра" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Пудра</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">15 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('perfume')">
+          <img src="https://www.letoile.kz/common/img/pim/2025/02/EX_a29a9026-1107-4580-ba46-77301a52ad72.jpg" alt="Парфюм" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Парфюм</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">89 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('eyepatches')">
+          <img src="https://a.lmcdn.ru/img600x866/M/P/MP002XW10APM_17026917_2_v4.jpg" alt="Патчи для глаз" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Патчи для глаз</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">23 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('lipoil')">
+          <img src="https://avatars.mds.yandex.net/get-mpic/11563949/2a0000018feef71822fa2819b9aed5ff35b0/orig" alt="Масло для губ" class="w-full h-60 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Масло для губ</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">13 500₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+
+        <!-- Product Card 3 -->
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer" onclick="openModal('faceCream')">
+          <img src="https://images.satu.kz/175827303_w600_h600_175827303.jpg" alt="Крем для лица" class="w-full h-60 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium mb-2">Крем для лица</h3>
           <p class="text-[#4AA3F3] font-bold mb-2">5 800₸</p>
           <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
         </div>
       </div>
     </main>
+
+    <!-- Modal -->
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+      <div class="bg-white rounded-lg w-11/12 sm:w-1/3 p-6 relative">
+        <!-- Close Button -->
+        <button onclick="closeModal()" class="absolute top-2 right-2 text-xl text-gray-500 hover:text-gray-800">×</button>
+
+        <div id="modalContent" class="text-center">
+          <img id="modalImage" src="" alt="" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 id="modalTitle" class="text-lg font-medium mb-2"></h3>
+          <p id="modalPrice" class="text-[#4AA3F3] font-bold mb-2"></p>
+          <p id="modalDescription" class="text-gray-700"></p>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6 mt-12">
@@ -60,8 +143,110 @@
       </div>
     </footer>
 
-  </body>
-  <script defer src="https://static.getbutton.io/widget/bundle.js?id=GUrUJ" ></script>
-  <script src="js/cart.js"></script>
+    <script>
+      function openModal(product) {
+        const modal = document.getElementById("productModal");
+        const title = document.getElementById("modalTitle");
+        const price = document.getElementById("modalPrice");
+        const description = document.getElementById("modalDescription");
+        const image = document.getElementById("modalImage");
 
+        const products = {
+          mascara: {
+            title: "Тушь для ресниц",
+            price: "2 300₸",
+            description: "Качественная тушь для ресниц, обеспечивающая длинные и объемные ресницы.",
+            image: "https://pcdn.goldapple.ru/p/p/19760336498/web/696d6167654d6f64656c8dc83c8e73792e9fullhd.webp"
+          },
+          lipstick: {
+            title: "Помада",
+            price: "3 500₸",
+            description: "Интенсивно пигментированная помада, которая не высыхает и долго держится.",
+            image: "https://divage.com/upload/iblock/834/83470b32d21c7d8c1b051d0016df408e.iomin.png"
+          },
+          foundation: {
+            title: "Тональная основа",
+            price: "9 500₸",
+            description: "Тональная основа, которая выравнивает тон кожи и скрывает несовершенства.",
+            image: "https://pcdn.goldapple.ru/p/p/69964000004/web/696d674d61696e8dc83b361f4fd08.jpg"
+          },
+          eyeshadowPalette: {
+            title: "Палетка теней",
+            price: "8 500₸",
+            description: "Широкая палитра теней с насыщенными цветами для любого образа.",
+            image: "https://i.makeup.kz/h/hb/hbgdiyclztcc.jpg"
+          },
+          makeupBrush: {
+            title: "Кисть для макияжа",
+            price: "3 500₸",
+            description: "Мягкая кисть для точного нанесения макияжа.",
+            image: "https://ir-3.ozone.ru/s3/multimedia-7/c1000/6050072911.jpg"
+          },
+          blush: {
+            title: "Румяна",
+            price: "6 900₸",
+            description: "Румяна для создания свежего и естественного румянца.",
+            image: "https://i.makeup.kz/n/no/nosnnxh1mmis.jpg"
+          },
+          highlighter: {
+            title: "Хайлайтер",
+            price: "9 500₸",
+            description: "Хайлайтер для подсвечивания лица и придания сияния.",
+            image: "https://www.monamie.kz/upload/resize_cache/iblock/39b/430_292_1/39b51742175083acfba0cf354c7e6bc3.jpg"
+          },
+          powder: {
+            title: "Пудра",
+            price: "15 500₸",
+            description: "Легкая пудра для матирования и стойкости макияжа.",
+            image: "https://i.makeup.kz/d/df/dfdvddmcibhc.jpg"
+          },
+          perfume: {
+            title: "Парфюм",
+            price: "89 900₸",
+            description: "Тёплый, пряный, уверенный — аромат для тех, кто чувствует сильнее.",
+            image: "https://www.letoile.kz/common/img/pim/2025/02/EX_a29a9026-1107-4580-ba46-77301a52ad72.jpg"
+          },
+          eyepatches: {
+            title: "Патчи для глаз",
+            price: "23 500₸",
+            description: "Мгновенно увлажняют, снимают отёки и возвращают сияние — выспавшийся взгляд без сна.",
+            image: "https://a.lmcdn.ru/img600x866/M/P/MP002XW10APM_17026917_2_v4.jpg"
+          },
+          lipoil: {
+            title: "Масло для губ",
+            price: "13 500₸",
+            description: "Питает, смягчает и придаёт естественный блеск — как поцелуй, только без драмы.",
+            image: "https://avatars.mds.yandex.net/get-mpic/11563949/2a0000018feef71822fa2819b9aed5ff35b0/orig"
+          },
+          faceCream: {
+            title: "Крем для лица",
+            price: "5 800₸",
+            description: "Увлажняющий крем с антивозрастным эффектом.",
+            image: "https://images.satu.kz/175827303_w600_h600_175827303.jpg"
+          }
+        };
+
+        const productInfo = products[product];
+
+        title.innerText = productInfo.title;
+        price.innerText = productInfo.price;
+        description.innerText = productInfo.description;
+        image.src = productInfo.image;
+
+        modal.classList.remove("hidden");
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("productModal");
+        modal.classList.add("hidden");
+      }
+    </script>
+
+        <script defer src="https://static.getbutton.io/widget/bundle.js?id=GUrUJ" ></script>
+    <script src="js/cart.js"></script>
+    <script src="js/modal.js"></script>
+
+    
+
+  </body>
 </html>

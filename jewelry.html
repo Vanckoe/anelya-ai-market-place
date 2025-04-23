@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WildShop — Бижутерия</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-[#4AA3F3] text-white py-4 shadow-md">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <a href='index.html' class="text-2xl font-bold">WildShop</a>
+        <nav class="space-x-4">
+          <a href="clothing.html" class="hover:underline">Одежда</a>
+          <a href="electronics.html" class="hover:underline">Электроника</a>
+          <a href="cosmetics.html" class="hover:underline">Косметика</a>
+          <a href="jewelry.html" class="hover:underline">Бижутерия</a>
+          <a href="books.html" class="hover:underline">Книги и канцелярия</a>
+          <a href="cart.html" id="cart-button" class="hover:underline relative">Корзина <span id="cart-counter" class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">0</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Products Section -->
+    <main class="container mx-auto px-4 min-h-screen py-8">
+      <h2 class="text-xl font-semibold mb-6">Бижутерия</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+        <!-- Пример карточки с описанием -->
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Изящные серьги с фианитом — легкий блеск, как первая звезда на закате.">
+          <img src=" https://momnt.ru/upload/iblock/62c/62c2a9a383055710cbb1f1e039cc5f91.jpg" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Серьги с фианитом</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">8 990₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Кольцо с цветком — воплощение весенней романтики и нежности.">
+          <img src="https://oniks.ua/upload/resize_cache/iblock/691/379_379_2/gzt22jz71gh8bmuuyfyz88txy2fl9umv.jpg" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Кольцо с цветком</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">2 390₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Подвеска с цветком — элегантное украшение для каждой девушки.">
+          <img src="https://shop-cdn1-2.vigbo.tech/shops/111377/products/21753728/images/3-81cb6bdb6b307500fd9e4208fcb5dd2b.JPG" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Подвеска с цветком</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">6 590₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Минималистичный кафф для стильного образа.">
+          <img src="https://mie.ru/upload/resize_cache/webp/resize_cache/iblock/0d8/580_750_2/swbz7x5agrndub69l015xepbwdywpidx.webp" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Кафф</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">3 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Серьги для пирсинга — дерзкий штрих в повседневный стиль.">
+          <img src="https://ae04.alicdn.com/kf/Sfdff7fd1f8474cf189f89b7a5a310e6b4.jpg" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Серьги для пирсинга</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">5 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Колье с тонкой цепочкой — изысканность в каждом изгибе.">
+          <img src="https://mie.ru/upload/resize_cache/webp/iblock/a87/pwrvkuadxkxvoxcovdvngt2fxkexk5on.webp" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Колье</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">7 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Сотуар с жемчугом — изысканная классика.">
+          <img src="https://resources.cdn-kaspi.kz/img/m/p/p9d/p11/11469695.jpeg?format=gallery-medium" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Сотуар жемчужный</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">4 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Повторное кольцо с цветком — весна дважды не отпускает.">
+          <img src="https://resources.cdn-kaspi.kz/img/m/p/h96/h84/85032655388702.jpg?format=gallery-medium" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Браслет</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">5 390₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Украшение с миниатюрной фото внутри, сохраняющее память о важном моменте.">
+          <img src="https://cs1.livemaster.ru/storage/26/1c/fb677dfc6132980761fd16bf25bw--suveniry-i-podarki-medalon-otkryvayuschijsya-s-zolotoj-fotogr.jpg" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Кулон с фотографией внутри</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">15 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Әр тал шашыңмен бірге тербеліп, нәзіктігің мен болмысыңды паш етеді. Ұлттың үні, сұлулықтың символы.">
+          <img src="https://i.pinimg.com/originals/68/ca/c1/68cac1f87978bb689397f93eb2569423.jpg" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Шашбау</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">7 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Бесбілезік— бес саусаққа тағылып, білезікпен жалғасатын тюрк сәндік әшекейі.">
+          <img src="https://i.pinimg.com/originals/c6/3c/68/c63c68dd7ebbd5126d934f583e232cf5.jpg" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Бесбілезік</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">7 900₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 product-card" data-description="Лаконичная подвеска — элегантный минимализм.">
+          <img src="https://images.satu.kz/219291171_w640_h320_shekelik-natsionalnoe-ukrashenie.jpg" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-medium mb-2">Шекелік</h3>
+          <p class="text-[#4AA3F3] font-bold mb-2">5 990₸</p>
+          <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full add-to-cart">Добавить в корзину</button>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
+      <div class="bg-white rounded-xl max-w-md w-full p-6 relative shadow-xl">
+        <button id="close-modal" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-xl">&times;</button>
+        <img id="modal-image" src="" class="w-full h-48 object-cover rounded mb-4" alt="Product Image">
+        <h3 id="modal-title" class="text-xl font-semibold mb-2"></h3>
+        <p id="modal-price" class="text-[#4AA3F3] font-bold mb-2"></p>
+        <p id="modal-description" class="text-gray-700 mb-4"></p>
+        <button class="bg-[#4AA3F3] hover:bg-purple-700 text-white py-2 px-4 rounded w-full">Добавить в корзину</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+      <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm">
+        <p>© 2025 WildShop. Все права защищены.</p>
+        <div class="space-x-4 mt-2 sm:mt-0">
+          <a href="#" class="hover:underline">Контакты</a>
+          <a href="#" class="hover:underline">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="https://static.getbutton.io/widget/bundle.js?id=GUrUJ" ></script>
+    <script src="js/cart.js"></script>
+    <script src="js/modal.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WildShop — Онлайн Маркетплейс</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+
+
+    <!-- Auth Section -->
+    <section class="bg-gray-200 py-16" id="auth">
+      <div class="container mx-auto px-4">
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+          <div id="auth-container">
+            <!-- Login Form -->
+            <div id="login-form">
+              <h2 class="text-2xl font-semibold mb-4 text-center">Вход</h2>
+              <label class="block text-gray-700 mb-2">Email:</label>
+              <input type="email" id="login-email" class="w-full p-2 mb-4 border border-gray-300 rounded" />
+              <label class="block text-gray-700 mb-2">Пароль:</label>
+              <input type="password" id="login-password" class="w-full p-2 mb-4 border border-gray-300 rounded" />
+              <button class="w-full bg-[#4AA3F3] text-white py-2 rounded hover:bg-purple-700" onclick="login()">Войти</button>
+              <p class="text-center mt-4">Нет аккаунта? <a href="#" class="text-[#4AA3F3]" onclick="showRegister()">Зарегистрироваться</a></p>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" class="hidden">
+              <h2 class="text-2xl font-semibold mb-4 text-center">Регистрация</h2>
+              <label class="block text-gray-700 mb-2">Имя пользователя:</label>
+              <input type="text" id="reg-username" class="w-full p-2 mb-4 border border-gray-300 rounded" />
+              <label class="block text-gray-700 mb-2">Email:</label>
+              <input type="email" id="reg-email" class="w-full p-2 mb-4 border border-gray-300 rounded" />
+              <label class="block text-gray-700 mb-2">Пароль:</label>
+              <input type="password" id="reg-password" class="w-full p-2 mb-4 border border-gray-300 rounded" />
+              <button class="w-full bg-[#4AA3F3] text-white py-2 rounded hover:bg-purple-700" onclick="register()">Зарегистрироваться</button>
+              <p class="text-center mt-4">Уже есть аккаунт? <a href="#" class="text-[#4AA3F3]" onclick="showLogin()">Войти</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function showRegister() {
+        document.getElementById('login-form').classList.add('hidden');
+        document.getElementById('register-form').classList.remove('hidden');
+      }
+
+      function showLogin() {
+        document.getElementById('register-form').classList.add('hidden');
+        document.getElementById('login-form').classList.remove('hidden');
+      }
+
+      function login() {
+        alert("Добро пожаловать обратно! 🎉 (муляж)");
+      }
+
+      function register() {
+        alert("Вы успешно зарегистрировались! 🥳 (муляж)");
+        showLogin();
+      }
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+      <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm">
+        <p>© 2025 WildShop. Все права защищены.</p>
+        <div class="space-x-4 mt-2 sm:mt-0">
+          <a href="#" class="hover:underline">Контакты</a>
+          <a href="#" class="hover:underline">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

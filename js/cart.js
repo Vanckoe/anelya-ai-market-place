@@ -80,4 +80,51 @@ function removeFromCart(productId) {
     renderCartItems();
     updateCartCounter();
   }
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".product-card");
+  
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        const title = card.querySelector("h3").innerText;
+        const price = card.querySelector("p").innerText;
+        const image = card.querySelector("img").src;
+        const description = card.dataset.description || "Описание недоступно.";
+  
+        document.getElementById("modal-title").innerText = title;
+        document.getElementById("modal-price").innerText = price;
+        document.getElementById("modal-image").src = image;
+        document.getElementById("modal-description").innerText = description;
+  
+        document.getElementById("modal").classList.remove("hidden");
+      });
+    });
+  
+    document.getElementById("close-modal").addEventListener("click", () => {
+      document.getElementById("modal").classList.add("hidden");
+    });
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".product-card");
+  
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        const title = card.querySelector("h3").innerText;
+        const price = card.querySelector("p").innerText;
+        const image = card.querySelector("img").src;
+        const description = card.dataset.description || "Описание недоступно.";
+  
+        document.getElementById("modal-title").innerText = title;
+        document.getElementById("modal-price").innerText = price;
+        document.getElementById("modal-image").src = image;
+        document.getElementById("modal-description").innerText = description;
+  
+        document.getElementById("modal").classList.remove("hidden");
+      });
+    });
+  
+    document.getElementById("close-modal").addEventListener("click", () => {
+      document.getElementById("modal").classList.add("hidden");
+    });
+  });
+  
   
